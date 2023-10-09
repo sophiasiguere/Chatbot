@@ -7,6 +7,7 @@ const sendChatBtn = document.querySelector(".chat-input span");
 let userMessage = null; // Variable to store user's message
 const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
+const conversation = []; // Array to store the conversation
 
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
@@ -19,6 +20,10 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
+
+        conversation.push({ role: "system", content: "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero únicamente relacionado a Ingeniería específicamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema"});
+        conversation.push({ role: "user", content: userMessage });
+        
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
 
@@ -31,13 +36,15 @@ const generateResponse = (chatElement) => {
         },
         body: JSON.stringify({
             model: "ft:gpt-3.5-turbo-0613:personal::87eCXcav",
-            messages: [{"role": "system", "content": "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero unicamente relacionado a Ingenieria especificamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema"},{role: "user", content: userMessage}],
+            messages: conversation, // Use the conversation array
         })
     }
 
-    // Send POST request to API, get response and set the reponse as paragraph text
+    // Send POST request to API, get response and set the response as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
-        messageElement.textContent = data.choices[0].message.content.trim();
+        const response = data.choices[0].message.content.trim();
+        messageElement.textContent = response;
+        console.log(conversation);
     }).catch(() => {
         messageElement.classList.add("error");
         messageElement.textContent = "Oops! Something went wrong. Please try again.";
@@ -45,19 +52,16 @@ const generateResponse = (chatElement) => {
 }
 
 const handleChat = () => {
-    userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+    userMessage = chatInput.value.trim();
     if(!userMessage) return;
 
-    // Clear the input textarea and set its height to default
     chatInput.value = "";
     chatInput.style.height = `${inputInitHeight}px`;
 
-    // Append the user's message to the chatbox
     chatbox.appendChild(createChatLi(userMessage, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
     
     setTimeout(() => {
-        // Display "Thinking..." message while waiting for the response
         const incomingChatLi = createChatLi("Thinking...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
@@ -66,14 +70,11 @@ const handleChat = () => {
 }
 
 chatInput.addEventListener("input", () => {
-    // Adjust the height of the input textarea based on its content
     chatInput.style.height = `${inputInitHeight}px`;
     chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
 
 chatInput.addEventListener("keydown", (e) => {
-    // If Enter key is pressed without Shift key and the window 
-    // width is greater than 800px, handle the chat
     if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
         e.preventDefault();
         handleChat();

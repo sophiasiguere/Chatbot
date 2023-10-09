@@ -1,37 +1,1601 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Chatbot in JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts Link For Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="script.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo Narrow:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Brands:wght@400&display=swap"
+    />
   </head>
   <body>
-    <button class="chatbot-toggler">
-      <span class="material-symbols-rounded">mode_comment</span>
-      <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-      <header>
-        <h2>Chatbot</h2>
-        <span class="close-btn material-symbols-outlined">close</span>
-      </header>
-      <ul class="chatbox">
-        <li class="chat incoming">
-          <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hola! 👋<br>Cómo te puedo ayudar?</p>
-        </li>
-      </ul>
-      <div class="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-        <span id="send-btn" class="material-symbols-rounded">send</span>
+    <div class="principalurledugt-by-htmlt">
+      <div class="divviewer-inner-layout">
+        <div class="divzoom">
+          <div class="divviewer-book">
+            <div class="divpageflip-zoomwindow">
+              <div class="divpageflip-zoomcontent">
+                <div class="divpageflip-book-shadow"></div>
+                <div class="divpageflip-clipper">
+                  <div class="divpageflip-inner-clipper">
+                    <div class="divpageflip-origin">
+                      <div class="divpageflip-page-content">
+                        <div class="divpage-holder">
+                          <div class="divpageflip-zoomwindow"></div>
+                          <div class="pseudo"></div>
+                        </div>
+                      </div>
+                      <div class="divpageflip-page-content">
+                        <div class="divpage-holder">
+                          <div class="divpageflip-zoomwindow"></div>
+                          <div class="pseudo"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="divadsbox"></div>
+      </div>
+      <div class="divelementor">
+        <div class="section">
+          <div class="divelementor-container">
+            <div class="divelementor-element">
+              <div class="divelementor-swiper">
+                <div class="divelementor-slides-wrapper">
+                  <div class="divswiper-wrapper">
+                    <div class="divelementor-repeater-item-7c">
+                      <img class="img-icon" alt="" src="./public/img@2x.png" />
+                    </div>
+                  </div>
+                  <div class="button-previous-slide">
+                    <div class="ieicon-chevron-left">
+                      <div class="pseudo2">
+                        <img class="icon" alt="" src="./public/icon.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-next-slide">
+                    <div class="ieicon-chevron-left">
+                      <div class="pseudo2">
+                        <img class="icon" alt="" src="./public/icon1.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section1">
+          <div class="divelementor-container1">
+            <div class="divelementor-element1">
+              <div class="heading-2">
+                <div class="qu-quieres-estudiar">¿Qué quieres estudiar?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="divelementor-container2">
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element2">
+                <div class="divelementor-cta">
+                  <div class="divelementor-cta-bg-wrapper">
+                    <img
+                      class="img-bg-pregrados"
+                      alt=""
+                      src="./public/img--bg-pregrados@2x.png"
+                    />
+                  </div>
+                  <div class="divelementor-cta-content">
+                    <div class="heading-2margin">
+                      <div class="heading-21">
+                        <div class="admisiones-pregrado">
+                          Admisiones pregrado
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-description">
+                      <div class="divelementor-cta-description1">
+                        <div class="todo-lo-que-container">
+                          <p class="todo-lo-que">
+                            Todo lo que necesitas saber para
+                          </p>
+                          <p class="todo-lo-que">
+                            ingresar a nuestras carreras de pregrado
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-button-wrap">
+                      <div class="link">
+                        <b class="ms-informacin">Más Información</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element2">
+                <div class="divelementor-cta">
+                  <div class="divelementor-cta-bg-wrapper">
+                    <img
+                      class="img-bg-pregrados"
+                      alt=""
+                      src="./public/img--bg-posgrados@2x.png"
+                    />
+                  </div>
+                  <div class="divelementor-cta-content">
+                    <div class="heading-2margin">
+                      <div class="heading-22">
+                        <div class="admisiones-pregrado">Posgrados</div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-description">
+                      <div class="divelementor-cta-description3">
+                        <div class="todo-lo-que-container">
+                          <p class="todo-lo-que">
+                            Conoce las diferentes maestrías y
+                          </p>
+                          <p class="todo-lo-que">
+                            especializaciones que se ofrecen
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-button-wrap">
+                      <div class="link">
+                        <b class="ms-informacin">Más Información</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element2">
+                <div class="divelementor-cta">
+                  <div class="divelementor-cta-bg-wrapper">
+                    <img
+                      class="img-bg-pregrados"
+                      alt=""
+                      src="./public/img--bg-cursoslibres@2x.png"
+                    />
+                  </div>
+                  <div class="divelementor-cta-content">
+                    <div class="heading-2margin">
+                      <div class="heading-23">
+                        <div class="admisiones-pregrado">Cursos libres</div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-description">
+                      <div class="divelementor-cta-description5">
+                        <div class="todo-lo-que-container">
+                          <p class="todo-lo-que">Programas de capacitación y</p>
+                          <p class="todo-lo-que">
+                            actualización que responden a las
+                          </p>
+                          <p class="todo-lo-que">necesidades actuales</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-cta-button-wrap2">
+                      <div class="link">
+                        <b class="ms-informacin">Más Información</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section3">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap3">
+              <div class="sectionmargin">
+                <div class="section4">
+                  <div class="divelementor-container3">
+                    <div class="divelementor-widget-wrap4">
+                      <div class="divelementor-element5">
+                        <div class="heading-24">
+                          <div class="evaluaciones-de-admisin-container">
+                            <p class="todo-lo-que">Evaluaciones de admisión</p>
+                            <p class="todo-lo-que">Campus Cd. de Guatemala</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divelementor-elementmargin">
+                <div class="divelementor-divider">
+                  <div class="spanelementor-divider-separat"></div>
+                </div>
+              </div>
+              <div class="divelementor-element6">
+                <div class="heading-4">
+                  <b class="link-clic">Clic aquí</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section5">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap5">
+              <div class="divelementor-elementmargin">
+                <div class="divelementor-widget-container">
+                  <img
+                    class="cooperacionalemn-thumbn-400x26-icon"
+                    alt=""
+                    src="./public/cooperacionalemn-thumbn400x264png@2x.png"
+                  />
+                </div>
+              </div>
+              <div class="divelementor-element7">
+                <div class="heading-25">
+                  <div class="qu-quieres-estudiar">Proyecto URL-KfW</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section6">
+          <div class="divelementor-container2">
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element8">
+                <div class="divelementor-widget-container1">
+                  <div class="divelementor-cta3">
+                    <div class="divelementor-cta-content3">
+                      <div class="heading-26">
+                        <div class="proyecto-campus-y-container">
+                          <p class="todo-lo-que">Proyecto Campus y Sedes</p>
+                          <p class="todo-lo-que">Regionales</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element8">
+                <div class="divelementor-widget-container1">
+                  <div class="divelementor-cta3">
+                    <div class="divelementor-cta-content4">
+                      <div class="heading-27">
+                        <div class="proyecto-campus-y-container">
+                          <p class="todo-lo-que">Proyecto Desarrollo con</p>
+                          <p class="todo-lo-que">Justicia</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-widget-wrap">
+              <div class="divelementor-element8">
+                <div class="divelementor-widget-container1">
+                  <div class="divelementor-cta3">
+                    <div class="divelementor-cta-content5">
+                      <div class="heading-28">
+                        <div class="proyecto-campus-y-container">
+                          <p class="todo-lo-que">Proyecto Educación para</p>
+                          <p class="todo-lo-que">el Desarrollo Integral</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section7">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap5">
+              <div class="divelementor-elementmargin">
+                <div class="heading-3">
+                  <div class="link-vriu">VRIU</div>
+                </div>
+              </div>
+              <div class="divelementor-element11">
+                <div class="heading-41">
+                  <b class="vicerrectora-de-identidad"
+                    >Vicerrectoría de identidad universitaria</b
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section8">
+          <div class="divelementor-container2">
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap10">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="agrupclubes-home-400x300jpg-icon"
+                      alt=""
+                      src="./public/agrupclubes-home400x300jpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-42">
+                    <div class="centro-de-liderazgo">
+                      CENTRO DE LIDERAZGO ESTUDIANTIL
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Espacios creados y dirigidos por estudiantes
+                      </p>
+                      <p class="todo-lo-que">
+                        para estudiantes en dónde tienen la posibilidad
+                      </p>
+                      <p class="todo-lo-que">
+                        de compartir intereses, crear proyectos y
+                      </p>
+                      <p class="todo-lo-que">
+                        actividades que complementan su desarrollo
+                      </p>
+                      <p class="todo-lo-que">
+                        humano, social, profesional en el marco de la
+                      </p>
+                      <p class="todo-lo-que">
+                        <span>identidad landivariana e ignaciana. </span>
+                        <b class="leer-ms">Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap10">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="agrupclubes-home-400x300jpg-icon"
+                      alt=""
+                      src="./public/becas-home400x300jpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-43">
+                    <div class="centro-de-liderazgo">
+                      CENTRO DE GESTIÓN DE BECAS
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p1">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Desarrolla personas integrales, reduciendo el
+                      </p>
+                      <p class="todo-lo-que">
+                        índice de limitación a la educación superior
+                      </p>
+                      <p class="todo-lo-que">
+                        existente en el país a estudiantes con
+                      </p>
+                      <p class="todo-lo-que">
+                        excelencia académica que tiene dificultades
+                      </p>
+                      <p class="todo-lo-que">
+                        económicas para iniciar o culminar sus
+                      </p>
+                      <p class="todo-lo-que">
+                        <span>estudios universitarios. </span>
+                        <b class="leer-ms">Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap12">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="agrupclubes-home-400x300jpg-icon"
+                      alt=""
+                      src="./public/deportes-home400x300jpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-44">
+                    <div class="centro-de-liderazgo">
+                      CENTRO DEPORTIVO LANDIVARIANO
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element14">
+                  <div class="p2">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Se fomenta la salud a través de la organización,
+                      </p>
+                      <p class="todo-lo-que">
+                        promoción y desarrollo del deporte en sus
+                      </p>
+                      <p class="todo-lo-que">
+                        diferentes niveles: recreacional y competitiva.
+                      </p>
+                      <p class="todo-lo-que">
+                        En este último se cuenta con equipos
+                      </p>
+                      <p class="todo-lo-que">
+                        representativos que participan en
+                      </p>
+                      <p class="todo-lo-que">
+                        competencias tanto a nivel nacional como
+                      </p>
+                      <p class="todo-lo-que">
+                        <span>internacional. </span>
+                        <b class="leer-ms">Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section9">
+          <div class="divelementor-container2">
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap13">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="agrupclubes-home-400x300jpg-icon"
+                      alt=""
+                      src="./public/rsu-home400x300jpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-45">
+                    <div class="centro-de-liderazgo">
+                      <p class="todo-lo-que">
+                        CENTRO DE RESPONSABILIDAD SOCIAL
+                      </p>
+                      <p class="todo-lo-que">UNIVERSITARIA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="ieicon-chevron-left">
+                    <div class="en-la-universidad-container">
+                      <p class="todo-lo-que">
+                        En la Universidad Rafael Landívar se entiende
+                      </p>
+                      <p class="todo-lo-que">
+                        como responsabilidad social universitaria (RSU)
+                      </p>
+                      <p class="todo-lo-que">
+                        la habilidad y efectividad para responder a las
+                      </p>
+                      <p class="todo-lo-que">
+                        necesidades urgentes de transformación de la
+                      </p>
+                      <p class="todo-lo-que">
+                        <span>sociedad. </span>
+                        <b class="leer-ms">Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap14">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="agrupclubes-home-400x300jpg-icon"
+                      alt=""
+                      src="./public/pensamientoign-home400x300jpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-46">
+                    <div class="centro-de-liderazgo">
+                      CENTRO DE PENSAMIENTO IGNACIANO
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p4">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Fortalece integralmente el pensamiento sobre
+                      </p>
+                      <p class="todo-lo-que">
+                        la identidad institucional de inspiración
+                      </p>
+                      <p class="todo-lo-que">
+                        cristiana, ignaciana y landivariana. Favorece el
+                      </p>
+                      <p class="todo-lo-que">
+                        apostolado intelectual mediante la promoción
+                      </p>
+                      <p class="todo-lo-que">
+                        de actividades intelectuales dirigidas en favor
+                      </p>
+                      <p class="todo-lo-que">
+                        de la identidad y misión de la Universidad.
+                      </p>
+                    </div>
+                    <div class="link-strong">
+                      <b class="leer">Leer</b>
+                      <b class="ms">más&gt;&gt;</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap12">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="convivencia-homejpg-icon"
+                      alt=""
+                      src="./public/convivencia-homejpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-47">
+                    <div class="centro-de-liderazgo">
+                      <p class="todo-lo-que">
+                        DIRECCIÓN DE CONVIVENCIA Y AMBIENTES
+                      </p>
+                      <p class="todo-lo-que">SEGUROS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p5">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Brinda seguimiento a los procesos
+                      </p>
+                      <p class="todo-lo-que">
+                        relacionados con las políticas, protocolos
+                      </p>
+                      <p class="todo-lo-que">
+                        normas e instrumentos institucionales en
+                      </p>
+                      <p class="todo-lo-que">
+                        materia de convivencia y ambientes seguros;
+                      </p>
+                      <p class="todo-lo-que">
+                        procura la salvaguarda de la dignidad e
+                      </p>
+                      <p class="todo-lo-que">
+                        integridad de la comunidad universitaria.
+                      </p>
+                    </div>
+                    <div class="strong-link">
+                      <b class="leer1">Leer</b>
+                      <b class="ms">más&gt;&gt;</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section10">
+          <div class="divelementor-container2">
+            <div class="divelementor-column">
+              <div class="divelementor-widget-wrap12">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="convivencia-homejpg-icon"
+                      alt=""
+                      src="./public/arteslan-homejpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-48">
+                    <div class="centro-de-liderazgo">
+                      CENTRO DE ARTES LANDÍVAR
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p6">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Lugar de encuentro estudiantil para la
+                      </p>
+                      <p class="todo-lo-que">
+                        expresión y experimentación de diversas
+                      </p>
+                      <p class="todo-lo-que">
+                        disciplinas artísticas. Dedicado a la
+                      </p>
+                      <p class="todo-lo-que">
+                        investigación, creación y promoción de teatro
+                      </p>
+                      <p class="todo-lo-que">
+                        contemporáneo, danza contemporánea y
+                      </p>
+                      <p class="todo-lo-que">
+                        música, así como a la documentación virtual
+                      </p>
+                      <p class="todo-lo-que">
+                        del patrimonio cultural, artístico e histórico de
+                      </p>
+                      <p class="todo-lo-que">
+                        la URL y la Compañía de Jesús en Guatemala.
+                      </p>
+                      <p class="leer-ms4">
+                        <b>Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column7">
+              <div class="divelementor-widget-wrap17">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="convivencia-homejpg-icon"
+                      alt=""
+                      src="./public/enlacevinc-homejpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="heading-49">
+                    <div class="centro-de-liderazgo">
+                      <p class="todo-lo-que">CENTRO LANDIVARIANO DE ENLACE Y</p>
+                      <p class="todo-lo-que">VINCULACIÓN</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="p7">
+                    <div class="espacios-creados-y-container">
+                      <p class="todo-lo-que">
+                        Sistematiza y mejora la eficiencia y eficacia en
+                      </p>
+                      <p class="todo-lo-que">
+                        la oferta de cooperación para la Universidad en
+                      </p>
+                      <p class="todo-lo-que">
+                        la identificación, recaudación y gestión de
+                      </p>
+                      <p class="todo-lo-que">
+                        recursos que fortalezcan las funciones
+                      </p>
+                      <p class="todo-lo-que">
+                        sustantivas de la misma, así como el acceso de
+                      </p>
+                      <p class="todo-lo-que">
+                        estudiantes interesados, que tienen
+                      </p>
+                      <p class="todo-lo-que">
+                        restricciones económicas para acceder a ella.
+                      </p>
+                      <p class="leer-ms4">
+                        <b>Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divelementor-column7">
+              <div class="divelementor-widget-wrap18">
+                <div class="divelementor-elementmargin">
+                  <div class="divelementor-widget-container4">
+                    <img
+                      class="convivencia-homejpg-icon"
+                      alt=""
+                      src="./public/pul-homejpg@2x.png"
+                    />
+                  </div>
+                </div>
+                <div class="divelementor-elementmargin4">
+                  <div class="p">
+                    <div class="centro-de-liderazgo">
+                      CENTRO PASTORAL UNIVERSITARIO LANDIVARIANO
+                    </div>
+                  </div>
+                </div>
+                <div class="divelementor-element12">
+                  <div class="ieicon-chevron-left">
+                    <div class="busca-acompaar-a-container">
+                      <p class="todo-lo-que">
+                        Busca acompañar a la Comunidad Landivariana
+                      </p>
+                      <p class="todo-lo-que">
+                        en el encuentro con el Dios de Jesús, desde la
+                      </p>
+                      <p class="todo-lo-que">
+                        espiritualidad ignaciana y, favorecer así, el
+                      </p>
+                      <p class="todo-lo-que">
+                        desarrollo integral (humano/espiritual) de la
+                      </p>
+                      <p class="todo-lo-que">
+                        persona, de manera que la lleve al compromiso
+                      </p>
+                      <p class="todo-lo-que">
+                        consigo mismo, con la sociedad y con la
+                      </p>
+                      <p class="todo-lo-que">
+                        <span>creación. </span>
+                        <b class="leer-ms">Leer más&gt;&gt;</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section11">
+          <div class="divelementor-container11">
+            <div class="divelementor-widget-wrap19">
+              <div class="divelementor-elementmargin21">
+                <div class="div">
+                  <div class="div1">
+                    <div class="link-agenda">Agenda Mensual Ocutubre 023</div>
+                  </div>
+                  <div class="div2">
+                    <div class="link-agenda">Publish at Calameo</div>
+                  </div>
+                </div>
+              </div>
+              <div class="divelementor-element21">
+                <div class="divelementor-button-wrapper">
+                  <div class="link3">
+                    <div class="spanelementor-button-content-">
+                      <div class="divelementor-swiper">
+                        <b class="ms-sobre-agenda"
+                          >Más sobre agenda de la VRIU</b
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section12">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap20">
+              <div class="section13">
+                <div class="divelementor-container13">
+                  <div class="divelementor-widget-wrap21">
+                    <div class="divelementor-elementmargin22">
+                      <div class="heading-31">
+                        <b class="misin">MISIÓN</b>
+                      </div>
+                    </div>
+                    <div class="divelementor-elementmargin">
+                      <div class="divelementor-divider1">
+                        <div class="spanelementor-divider-separat1"></div>
+                      </div>
+                    </div>
+                    <div class="divelementor-elementmargin24">
+                      <div class="p9">
+                        <div class="establecer-condiciones-propici-container">
+                          <p class="todo-lo-que">
+                            Establecer condiciones propicias para
+                          </p>
+                          <p class="todo-lo-que">
+                            recrear un modelo universitario de
+                          </p>
+                          <p class="todo-lo-que">
+                            identidad jesuita, inspirado en la
+                          </p>
+                          <p class="todo-lo-que">
+                            espiritualidad y pedagogía ignaciana, que
+                          </p>
+                          <p class="todo-lo-que">
+                            promueve la educación, la investigación y
+                          </p>
+                          <p class="todo-lo-que">
+                            la proyección como medio para incidir
+                          </p>
+                          <p class="todo-lo-que">
+                            significativamente en el mejoramiento de
+                          </p>
+                          <p class="todo-lo-que">
+                            las vidas de las personas, incrementar el
+                          </p>
+                          <p class="todo-lo-que">
+                            bienestar de la sociedad y cuidar la
+                          </p>
+                          <p class="todo-lo-que">
+                            calidad del entorno donde se desarrollan,
+                          </p>
+                          <p class="todo-lo-que">
+                            contribuyendo, de esa manera concreta, a
+                          </p>
+                          <p class="todo-lo-que">
+                            construir y sostener el bien general.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element22">
+                      <div class="divelementor-button-wrapper1">
+                        <div class="link4">
+                          <div class="imec-sl-arrow-left">
+                            <div class="divelementor-swiper">
+                              <b class="ms-sobre-agenda">Más información</b>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divelementor-widget-wrap22">
+                    <div class="divelementor-element23">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">61</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title">
+                          <div class="aos">años</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element24">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">9</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title1">
+                          <div class="aos">campus y sedes</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element25">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="spanelementor-counter-number2">
+                            <div class="div3">32,594</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title2">
+                          <div class="aos">estudiantes de pregrado</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element26">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">78</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title3">
+                          <div class="aos">carreras de pregrado</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element27">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="spanelementor-counter-number4">
+                            <div class="div3">1,989</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title4">
+                          <div class="aos">estudiantes de posgrado</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element28">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">25</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title5">
+                          <div class="aos">cursos libres</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element29">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="spanelementor-counter-number4">
+                            <div class="div3">4,077</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title6">
+                          <div class="aos">catedráticos</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element30">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="spanelementor-counter-number4">
+                            <div class="div3">1,453</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title7">
+                          <div class="aos">personal adiministrativo</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element31">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w8">
+                          <div class="spanelementor-counter-number-"></div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">192</div>
+                          </div>
+                          <div class="spanelementor-counter-number-"></div>
+                        </div>
+                        <div class="divelementor-counter-title8">
+                          <div class="aos">
+                            <p class="todo-lo-que">personal académico con</p>
+                            <p class="todo-lo-que">doctorado</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-element32">
+                      <div class="ieicon-chevron-left">
+                        <div class="divelementor-counter-number-w9">
+                          <div class="spanelementor-counter-number-18">
+                            <div class="div12">+</div>
+                          </div>
+                          <div class="ieicon-chevron-left">
+                            <div class="div3">231</div>
+                          </div>
+                          <div class="spanelementor-counter-number-19">
+                            <div class="k">k</div>
+                          </div>
+                        </div>
+                        <div class="divelementor-counter-title9">
+                          <div class="aos">
+                            <p class="todo-lo-que">m2 DE ÁREA DE CAMPUS</p>
+                            <p class="todo-lo-que">CENTRAL</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section14">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap5">
+              <div class="divelementor-elementmargin25">
+                <div class="heading-29">
+                  <div class="qu-quieres-estudiar">Tu futuro inicia aquí</div>
+                </div>
+              </div>
+              <div class="divelementor-elementmargin">
+                <div class="heading-411">
+                  <b class="vicerrectora-de-identidad">Fotos del Campus</b>
+                </div>
+              </div>
+              <div class="divelementor-elementmargin">
+                <div class="heading-412">
+                  <b class="vicerrectora-de-identidad">Tour 360</b>
+                </div>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="heading-413">
+                  <b class="vicerrectora-de-identidad">ver videos</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section15">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap5">
+              <div class="sectionmargin1">
+                <div class="section4">
+                  <div class="divelementor-container3">
+                    <div class="divelementor-widget-wrap25">
+                      <div class="divelementor-element34">
+                        <div class="heading-210">
+                          <div class="noticias">Noticias</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-widget-wrap26">
+                      <div class="divelementor-element34">
+                        <div class="divelementor-button-wrapper2">
+                          <div class="link5">
+                            <div class="imec-sl-arrow-left">
+                              <div class="divelementor-swiper">
+                                <b class="ms-sobre-agenda">ver todas</b>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divelementor-element36">
+                <div class="divelementor-posts-container">
+                  <div class="article">
+                    <div class="divelementor-post-text">
+                      <div class="heading-3-link">
+                        <div class="acuerdos-y-convenios">
+                          Acuerdos y Convenios han sido alcanzados para
+                          fortalecer la misión de la URL
+                        </div>
+                      </div>
+                      <div class="divelementor-post-meta-data">
+                        <div class="octubre-6-2023">octubre 6, 2023</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article">
+                    <div class="divelementor-post-text">
+                      <div class="heading-3-link1">
+                        <div class="acuerdos-y-convenios">
+                          Universidad Rafael Landívar fue sede del 18༠ Seminario
+                          Universitario Marítimo Portuario
+                        </div>
+                      </div>
+                      <div class="divelementor-post-meta-data">
+                        <div class="octubre-6-2023">octubre 5, 2023</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article2">
+                    <div class="divelementor-post-text">
+                      <div class="heading-3-link2">
+                        <div class="acuerdos-y-convenios">
+                          Memoria de labores
+                        </div>
+                      </div>
+                      <div class="divelementor-post-meta-data">
+                        <div class="octubre-6-2023">octubre 4, 2023</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article">
+                    <div class="divelementor-post-text">
+                      <div class="heading-3-link3">
+                        <div class="acuerdos-y-convenios">
+                          XV Congreso Jurídico Landivariano se enfoca en la
+                          prevención del lavado de dinero
+                        </div>
+                      </div>
+                      <div class="divelementor-post-meta-data">
+                        <div class="octubre-6-2023">octubre 4, 2023</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article">
+                    <div class="divelementor-post-text">
+                      <div class="heading-3-link4">
+                        <div class="acuerdos-y-convenios">
+                          URL apoya construcción de iniciativa 6292
+                        </div>
+                      </div>
+                      <div class="divelementor-post-meta-data">
+                        <div class="octubre-6-2023">octubre 2, 2023</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section17">
+          <div class="divelementor-container3">
+            <div class="divelementor-widget-wrap5">
+              <div class="sectionmargin1">
+                <div class="section4">
+                  <div class="divelementor-container3">
+                    <div class="divelementor-widget-wrap25">
+                      <div class="divelementor-element34">
+                        <div class="heading-211">
+                          <div class="noticias">Agenda</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divelementor-widget-wrap26">
+                      <div class="divelementor-element34">
+                        <div class="divelementor-button-wrapper3">
+                          <div class="link6">
+                            <div class="imec-sl-arrow-left">
+                              <div class="divelementor-swiper">
+                                <b class="ms-sobre-agenda">ver todos</b>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divelementor-element39">
+                <div class="divmec-slider-t1-wrap">
+                  <div class="divmec-slider-t1">
+                    <div class="divowl-stage-outer">
+                      <div class="divowl-stage">
+                        <div class="divowl-item">
+                          <div class="article5">
+                            <div class="divmec-slider-t1-content">
+                              <div class="divevent-grid-modern-head">
+                                <div class="divmec-event-date">
+                                  <div class="div14">11</div>
+                                </div>
+                                <div class="divmec-event-month">
+                                  <div class="octubre">octubre</div>
+                                </div>
+                                <div class="divmec-event-day">
+                                  <div class="mircoles">miércoles</div>
+                                </div>
+                              </div>
+                              <div class="divmec-event-content">
+                                <div class="heading-414">
+                                  <b class="link-ven"
+                                    >Ven y Vive la Eucaristía</b
+                                  >
+                                  <div class="spanevent-color"></div>
+                                </div>
+                              </div>
+                              <div class="divmec-event-footer">
+                                <div class="link7">
+                                  <div class="ver-detalle">Ver detalle</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="divowl-item">
+                          <div class="article6">
+                            <div class="divmec-slider-t1-content1"></div>
+                            <img
+                              class="divmec-slider-t1-img-icon"
+                              alt=""
+                              src="./public/divmecslidert1img@2x.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="presentationowl-prev">
+                      <div class="imec-sl-arrow-left">
+                        <div class="divelementor-counter-number-w">
+                          <img class="icon2" alt="" src="./public/icon2.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="presentationowl-next">
+                      <div class="imec-sl-arrow-left">
+                        <div class="divelementor-counter-number-w">
+                          <img class="icon2" alt="" src="./public/icon3.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divurl-locations">
+        <div class="divurl-locations-container">
+          <div class="heading-212">
+            <div class="ubicaciones">Ubicaciones</div>
+          </div>
+          <div class="divurl-locations-items-list">
+            <div class="link8">
+              <div class="heading-415">
+                <b class="campus-central">Campus Central</b>
+              </div>
+              <div class="divurl-locations-info">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 2426-2626</div>
+                </div>
+                <div class="spanurl-locations-address">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">Vista Hermosa III, zona</p>
+                    <p class="todo-lo-que">16 Guatemala,</p>
+                    <p class="todo-lo-que">Centroamérica 01016</p>
+                  </div>
+                </div>
+              </div>
+              <div class="divurl-locations-map">
+                <div class="divol-viewport">
+                  <div class="divpageflip-zoomwindow">
+                    <img
+                      class="image-icon"
+                      alt=""
+                      src="./public/image@2x.png"
+                    />
+                  </div>
+                  <div class="divpageflip-zoomwindow">
+                    <div class="divol-zoom">
+                      <div class="button">
+                        <b class="b">+</b>
+                      </div>
+                      <div class="button1">
+                        <b class="b">–</b>
+                      </div>
+                    </div>
+                    <div class="divol-attribution">
+                      <div class="list">
+                        <div class="item">
+                          <div class="openstreetmap-contributors">
+                            <span>© </span>
+                            <span class="openstreetmap">OpenStreetMap</span>
+                            <span> contributors.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link9">
+              <div class="heading-416">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Campus de</p>
+                  <p class="todo-lo-que">Quetzaltenango</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 7722-9900</div>
+                </div>
+                <div class="spanurl-locations-address1">
+                  <div class="vista-hermosa-iii-container">
+                    14 avenida 0-43, zona 3
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link10">
+              <div class="heading-417">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Campus de la</p>
+                  <p class="todo-lo-que">Verapaz</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 7720-8300</div>
+                </div>
+                <div class="ieicon-chevron-left">
+                  <div class="km-2185-carretera-container">
+                    <p class="todo-lo-que">km 218.5, carretera a</p>
+                    <p class="todo-lo-que">San Juan Chamelco, Alta</p>
+                    <p class="todo-lo-que">Verapaz</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link11">
+              <div class="heading-418">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Campus de</p>
+                  <p class="todo-lo-que">Huehuetenango</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 7720-8400</div>
+                </div>
+                <div class="spanurl-locations-address3">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">11 avenida 1-10 Corral</p>
+                    <p class="todo-lo-que">Chiquito, zona 8,</p>
+                    <p class="todo-lo-que">Huehuetenango</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link12">
+              <div class="ieicon-chevron-left">
+                <b class="campus-de-quich">Campus de Quiché</b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 7963-8500</div>
+                </div>
+                <div class="spanurl-locations-address4">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">km 166.9, aldea El</p>
+                    <p class="todo-lo-que">Carmen Chitatul, Santa</p>
+                    <p class="todo-lo-que">Cruz del Quiché,</p>
+                    <p class="todo-lo-que">carretera a Joyabaj</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link13">
+              <div class="heading-420">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Campus de</p>
+                  <p class="todo-lo-que">Zacapa</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number5">
+                  <div class="vista-hermosa-iii-container">
+                    Teléfono: 7720-8100
+                  </div>
+                </div>
+                <div class="spanurl-locations-address5">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">km 3, aldea Manzanotes</p>
+                    <p class="todo-lo-que">Zacapa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link14">
+              <div class="heading-420">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Campus de</p>
+                  <p class="todo-lo-que">Jutiapa</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number6">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">Teléfonos: 7844-1313 /</p>
+                    <p class="todo-lo-que">7844-3978</p>
+                  </div>
+                </div>
+                <div class="spanurl-locations-address6">
+                  <div class="div15">1.</div>
+                  <div class="superscript-a">a</div>
+                  <div class="avenida-5-35-zona">avenida 5-35, zona 1,</div>
+                  <div class="barrio-central-jutiapa">
+                    Barrio Central, Jutiapa
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link15">
+              <div class="heading-422">
+                <b class="campus-central">
+                  <p class="todo-lo-que">Sede de la</p>
+                  <p class="todo-lo-que">Antigua</p>
+                </b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number">
+                  <div class="vista-hermosa-iii-container">PBX: 7931-4300</div>
+                </div>
+                <div class="spanurl-locations-address7">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">Pasaje Rubio núm. 1,</p>
+                    <p class="todo-lo-que">carretera a San</p>
+                    <p class="todo-lo-que">Bartolomé Becerra,</p>
+                    <p class="todo-lo-que">Antigua Guatemala</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link16">
+              <div class="ieicon-chevron-left">
+                <b class="sede-de-escuintla">Sede de Escuintla</b>
+              </div>
+              <div class="ieicon-chevron-left">
+                <div class="spanurl-locations-number6">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">Teléfonos: 7889-9866 /</p>
+                    <p class="todo-lo-que">7889-4277</p>
+                  </div>
+                </div>
+                <div class="heading-416">
+                  <div class="vista-hermosa-iii-container">
+                    <p class="todo-lo-que">Km. 1.5, carretera Finca</p>
+                    <p class="todo-lo-que">El Salto 00-14, Cantón</p>
+                    <p class="todo-lo-que">Los Voladores, Escuintla,</p>
+                    <p class="todo-lo-que">Escuintla.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divurl-footer">
+        <div class="divurl-footer-container">
+          <div class="spanurl-footer-copyright">
+            <b class="ms-sobre-agenda"
+              >Copyright 2022. Universidad Rafael Landívar</b
+            >
+          </div>
+          <div class="spanurl-footer-credits">
+            <b class="ms-sobre-agenda">Sitio web por Royale Studios</b>
+          </div>
+          <div class="spanurl-footer-credits1">
+            <b class="ms-sobre-agenda">Aviso legal</b>
+          </div>
+        </div>
+      </div>
+      <div class="divskin-tag">
+        <div class="divgfxnavigationrighthover"></div>
+        <div class="divskin-layout-inner">
+          <div class="svg"></div>
+          <div class="svg"></div>
+        </div>
+      </div>
+      <div class="divskin-tag1">
+        <div class="divskin-layout-inner1">
+          <div class="button-read-the-publication"></div>
+        </div>
+      </div>
+      <div class="divskin-tag2">
+        <div class="svg"></div>
+      </div>
+      <div class="divurl-nav">
+        <div class="pseudo6"></div>
+        <div class="divurl-nav-heading">
+          <div class="link17">
+            <img class="svg-icon" alt="" src="./public/svg.svg" />
+          </div>
+          <div class="divurl-nav-phone-container">
+            <div class="link18">
+              <div class="svgmargin">
+                <div class="svg2">
+                  <img class="frame-icon" alt="" src="./public/frame.svg" />
+                </div>
+              </div>
+              <div class="span">
+                <b class="b2">(502) 2426 2626</b>
+              </div>
+            </div>
+          </div>
+          <div class="divurl-nav-social">
+            <div class="linkmargin">
+              <div class="symbol"></div>
+            </div>
+            <div class="linkmargin">
+              <div class="symbol"></div>
+            </div>
+            <div class="linkmargin2">
+              <div class="symbol"></div>
+            </div>
+            <div class="linkmargin3">
+              <div class="symbol"></div>
+            </div>
+          </div>
+        </div>
+        <div class="divurl-nav-menu">
+          <div class="divurl-nav-menu-center">
+            <div class="ieicon-chevron-left">
+              <div class="list1">
+                <div class="item1">
+                  <b class="ms-sobre-agenda">Inicio</b>
+                </div>
+                <div class="item2">
+                  <b class="ms-sobre-agenda">Acerca de</b>
+                </div>
+                <div class="item3">
+                  <b class="ms-sobre-agenda">Carreras</b>
+                </div>
+                <div class="item4">
+                  <b class="ms-sobre-agenda">Admisiones</b>
+                </div>
+                <div class="item5">
+                  <b class="ms-sobre-agenda">Beneficios</b>
+                </div>
+                <div class="item6">
+                  <b class="ms-sobre-agenda">Investigación</b>
+                </div>
+                <div class="item7">
+                  <b class="ms-sobre-agenda">Identidad</b>
+                </div>
+                <div class="item8">
+                  <b class="ms-sobre-agenda">Biblioteca</b>
+                </div>
+                <div class="item9">
+                  <b class="ms-sobre-agenda">Landívar informa</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divurl-nav-menu-right">
+            <div class="link19">
+              <img class="svg-icon1" alt="" src="./public/svg1.svg" />
+            </div>
+            <div class="linkmargin4">
+              <div class="link20">
+                <div class="svgmargin">
+                  <div class="svg3">
+                    <img class="frame-icon" alt="" src="./public/frame1.svg" />
+                  </div>
+                </div>
+                <div class="span1">
+                  <b class="ms-sobre-agenda">Ingresar</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </body>
+  <iframe id = "chatbot-iframe" src="chatbot.html"></iframe>
 </html>
