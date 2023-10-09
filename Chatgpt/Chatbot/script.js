@@ -5,7 +5,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -27,11 +27,11 @@ const generateResponse = (chatElement) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer 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`
+            "Authorization": `Bearer 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`
         },
         body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: userMessage}],
+            model: "ft:gpt-3.5-turbo-0613:personal::87eCXcav",
+            messages: [{"role": "system", "content": "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero unicamente relacionado a Ingenieria especificamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema"},{role: "user", content: userMessage}],
         })
     }
 
