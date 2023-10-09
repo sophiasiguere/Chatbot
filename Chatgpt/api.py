@@ -34,13 +34,14 @@ app = Flask(__name__)
 def chat_with_model():
     try:
         # Get user input from the request
-        user_message = request.json['message']
+        json_data = request.get_json()
+        user_message = json_data['message']
 
         # Create a session with your fine-tuned model
         session = openai.ChatCompletion.create(
             model=fine_tuned_model_id,
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "system", "content": "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero unicamente relacionado a Ingenieria especificamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema."},
                 {"role": "user", "content": user_message}
             ]
         )

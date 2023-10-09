@@ -1,5 +1,4 @@
 import openai
-import time
 import os
 from dotenv import load_dotenv
 
@@ -16,41 +15,40 @@ if not api_key:
 # Set the API key
 openai.api_key = api_key
 
-# Fine-tuned model ID obtained from your fine-tuning job
-fine_tuned_model_id = "your_fine_tuned_model_id_here"
+# Check if the model ID exists in the model.txt file
+model_file_path = "model.txt"
+if os.path.exists(model_file_path):
+    with open(model_file_path, "r") as model_file:
+        fine_tuned_model_id = model_file.read().strip()
+
+# Check if the fine-tuned model ID is set
+if not fine_tuned_model_id:
+    raise ValueError("Fine-tuned model ID is not set in the model.txt file")
 
 # Create a session with your fine-tuned model
 session = openai.ChatCompletion.create(
     model=fine_tuned_model_id,
     messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "system", "content": "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero unicamente relacionado a Ingenieria especificamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema, a excepcion de preguntas del curso de tecnologias emergentes e innovacion"},
     ]
 )
 
-# Start a conversation by asking about a specific topic
-user_message = "Háblame sobre Decis Evo®"
-session = openai.ChatCompletion.create(
-    model=fine_tuned_model_id,
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": user_message}
-    ]
-)
+print("Bienvenido al bot de la facultad de Ingenieria de la Universidad Rafael Landivar. Type 'exit' to end the conversation.")
 
-response = session['choices'][0]['message']['content']
-print("Respuesta del modelo:", response)
+while True:
+    user_input = input("You: ")
+    
+    if user_input.lower() == 'exit':
+        break
 
-# Continue the conversation by asking more questions
-user_message = "¿Cuáles son los ingredientes activos de Decis Expert®?"
-session = openai.ChatCompletion.create(
-    model=fine_tuned_model_id,
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": user_message}
-    ]
-)
+    # Send the user's message to the model
+    session = openai.ChatCompletion.create(
+        model=fine_tuned_model_id,
+        messages=[
+            {"role": "system", "content": "Eres un chatbot para la Universidad Rafael Landívar, encargado de responder inquietudes y recomendar posibles carreras según gustos y aptitudes. Pero unicamente relacionado a Ingenieria especificamente de la Universidad Rafael Landivar y rechaza cualquier otro tema, y rechaza cualquier pregunta de otro tema. A excepcion de preguntas del curso de tecnologias emergentes e innovacion"},
+            {"role": "user", "content": user_input}
+        ]
+    )
 
-response = session['choices'][0]['message']['content']
-print("Respuesta del modelo:", response)
-
-# Continue with additional questions as needed
+    response = session['choices'][0]['message']['content']
+    print("Assistant:", response)
