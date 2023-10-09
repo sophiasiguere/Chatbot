@@ -35,7 +35,7 @@ const generateResponse = (chatElement) => {
             "Authorization": `Bearer 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`
         },
         body: JSON.stringify({
-            model: "ft:gpt-3.5-turbo-0613:personal::87eCXcav",
+            model: "ft:gpt-3.5-turbo-0613:personal::87sLq0mB",
             messages: conversation, // Use the conversation array
         })
     }
